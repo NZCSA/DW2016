@@ -1,0 +1,105 @@
+---
+layout              : layout-1.hbs
+titleSuffix         : " - Blog Three"
+barWithLogo         : true
+backgroundImages    : ["../media/images/05.jpg"]
+backgroundOverlay   : false
+---
+{{> background-image }}
+<div id="region-blog-list" class="region region-dark-background region-page blog-list-center blog-list-sidebar" data-deliverance-region="blog-list">
+    <div class="blog-list-container">
+        <!-- page title -->
+        <div class="page-title hidden" data-deliverance-element="title">
+            <div class="page-title-content">
+                <h6>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="100px" height="100px" viewBox="5.0 -10.0 100.0 135.0" enable-background="new 0 0 100 100" xml:space="preserve">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M103.194,97.172c-0.05-0.053-0.105-0.096-0.155-0.146   c0.057,0.043,0.109,0.089,0.165,0.129C103.201,97.162,103.197,97.165,103.194,97.172z M75.238,86.463   c-2.953,0.211-5.764,0.836-8.446,1.73c-5.988,3.043-12.74,4.793-19.918,4.793c-24.345,0-44.079-19.733-44.079-44.079   c0-24.342,19.733-44.079,44.079-44.079s44.079,19.737,44.079,44.079c0,3.733-0.515,7.336-1.388,10.798l0.123,0.105   c-0.908,3.571-1.338,7.32-1.061,11.198c0.628,8.811,4.453,16.612,10.233,22.416C92.297,88.527,84.049,85.832,75.238,86.463z"/>
+                    </svg>
+                    our voice
+                </h6>
+                <h2>The Band Journal</h2>
+            </div>
+        </div>
+        <!-- sidebar -->
+        <aside data-deliverance-element="sidebar" class="hidden">
+            {{> widget-categories }}
+            {{> widget-search }}
+            {{> widget-text }}
+        </aside>
+        <!-- post -->
+        <div class="post post-image hidden">
+            <div class="post-featured-image">
+                <img src="../media/images/thumbs/08.jpg" alt="">
+            </div>
+            <div class="post-content">
+                <h6>february 17th 2015</h6>
+                <h3><a href="javascript:void(0)">Listen Our New Album</a></h3>
+                <p>Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare.</p>
+                <a href="javascript:void(0)" class="border-button">read more</a>
+            </div>
+        </div>
+        <!-- post status -->
+        <div class="post post-status hidden">
+            <div class="post-content">
+                <h6>february 16th 2015</h6>
+                <h3><a href="javascript:void(0)">Post Status Example</a></h3>
+                <p>Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare.</p>
+            </div>
+        </div>
+        <!-- post -->
+        <div class="post hidden">
+            <div class="post-content">
+                <h6>february 15th 2015</h6>
+                <h3><a href="javascript:void(0)">The New Album Is Out</a></h3>
+                <p>Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare.</p>
+                <a href="javascript:void(0)" class="border-button">read more</a>
+            </div>
+        </div>
+        <!-- post video -->
+        <div class="post post-video hidden">
+            <div class="post-content">
+                <div class="post-featured-video">
+                    <iframe width="560" height="315" src="//www.youtube.com/embed/149BY2WTPJI" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="post-content">
+                    <h6>february 10th 2015</h6>
+                    <h3><a href="javascript:void(0)">Sed Molestie Augue Sit Amet Leo Consequat Posuere. Vestibulum</a></h3>
+                </div>
+            </div>
+        </div>
+        <!-- post -->
+        <div class="post post-image hidden">
+            <div class="post-featured-image">
+                <img src="../media/images/thumbs/09.jpg" alt="">
+            </div>
+            <div class="post-content">
+                <h6>february 10th 2015</h6>
+                <h3><a href="javascript:void(0)">The New Album Is Coming Soon</a></h3>
+                <p>Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci.</p>
+                <a href="javascript:void(0)" class="border-button">read more</a>
+            </div>
+        </div>
+        <!-- post quote -->
+        <div class="post post-quote hidden">
+            <div class="post-content">
+                <blockquote cite="Bosniac"> 
+                    Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus.
+                </blockquote>
+            </div>
+        </div>
+        <!-- post image -->
+        <div class="post post-image hidden">
+            <div class="post-content">
+                <div class="post-image-image image-lightbox" data-src="../media/images/09.jpg" data-width="1400" data-height="788">
+                    <img src="../media/images/thumbs/09.jpg" alt="">
+                </div>
+                <div class="post-content">
+                    <h6>february 10th 2015</h6>
+                    <h3><a href="javascript:void(0)">The New Album Is Coming Soon</a></h3>
+                </div>
+            </div>
+        </div>
+        <!-- load-more -->
+        <div id="load-more" class="post hidden">load more</div>
+    </div>
+</div>

@@ -1,0 +1,71 @@
+<!-- bar region -->
+<div id="bar" class="bar bar-player{{#if barWithLogo}} bar-logo{{/if}}" data-deliverance-region="bar">
+    <div id="bar-container" class="toggle-front" data-deliverance-element="container">
+        <!-- bar front -->
+        <div id="bar-front" class="bar-nav" data-deliverance-element="front">
+            <!-- audio player -->
+            <div id="bar-nav-player" data-deliverance-element="nav-player">
+                <!-- progress bar -->
+                <span id="bar-nav-player-progress" data-deliverance-element="player-progress"></span>
+                <span class="nav-player-ico">
+                    <svg width="12px" height="14px" viewBox="0 0 12 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                            <path d="M2.46294539,10.0001481 C0.948054107,10.0001481 0,10.8956023 0,11.9996647 C0,13.1044912 0.728279262,14 2.2433466,14 C3.75923553,14 4.48839507,13.1044912 4.48839507,11.9996647 L4.48839507,5.99936842 L11.0611007,3.00009357 L11.0611007,9.40881871 C10.1221428,9.15589084 10.6811162,9.00038986 10.0601129,9.00038986 C8.54598449,9.00038986 7.6393619,9.89589864 7.6393619,10.9999064 C7.6393619,12.1047875 8.3042615,13.0002417 9.81927016,13.0002417 C11.3351591,13.0002417 12,12.1047875 12,10.9999064 L12,0 L3.54937843,3.99990643 L3.54937843,10.4094503 C2.61047916,10.1564678 3.08406608,10.0001481 2.46294539,10.0001481 Z" fill="#000000" sketch:type="MSShapeGroup"></path>
+                        </g>
+                    </svg>
+                </span>
+            </div>
+            <!-- bar logo & nav -->
+            <div id="bar-content" data-deliverance-element="front-content">
+                <div id="bar-icons" data-deliverance-element="front-icons">
+                    <!-- ico full screen menu -->
+                    <span class="ico-button hide" id="bar-ico-full-menu" data-deliverance-element="ico-full-menu">
+                        <svg width="20px" height="14px" viewBox="0 0 20 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <path d="M0,12 L20,12 L20,14 L0,14 L0,12 Z M0,8 L20,8 L20,10 L0,10 L0,8 Z M0,4 L20,4 L20,6 L0,6 L0,4 Z M0,0 L20,0 L20,2 L0,2 L0,0 Z" fill="#FFFFFF"></path>
+                            </g>
+                        </svg>
+                    </span>
+                    <!-- ico full screen -->
+                    <span class="ico-button" id="bar-ico-full-screen" data-deliverance-element="ico-full-screen">
+                        <svg width="17px" height="14px" viewBox="0 0 17 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <path d="M17,0 L17,11 L0,11 L0,0 L17,0 Z M2,2 L2,9 L15,9 L15,2 L2,2 Z M13,12 L13,14 L9.61329515,14 L4,14 L4,12 L13,12 Z" fill="#FFFFFF"></path>
+                            </g>
+                        </svg>
+                    </span>
+                    <!-- ico footer -->
+                    <span class="ico-button" id="bar-ico-footer" data-deliverance-element="ico-copyright">
+                        <svg width="14px" height="15px" viewBox="0 0 14 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <path d="M0,6.99966829 C0.000995260664,3.13412785 3.13424171,0 7.00033175,0 C10.8669194,0 14,3.1342937 14,6.99966829 C14,10.8657063 10.8667536,13.9993366 7.00033175,14 C3.13424171,13.9993366 0.000995260664,10.866038 0,6.99966829 Z M2,6.99971319 C2.00602375,9.76099925 4.23925764,11.994694 7.00028685,12 C9.76160289,11.994694 11.9952671,9.76099925 12,6.99971319 C11.9952671,4.23900075 9.76160289,2.00501922 7.00028685,2 C4.23940107,2.00516262 2.00602375,4.23900075 2,6.99971319 Z M4.8580025,9.12117659 C4.28804192,8.53729435 3.99973397,7.7679661 4.00000019,7.00231949 C3.99973397,6.23558203 4.28617843,5.46325391 4.85853492,4.87868989 C5.42889482,4.293035 6.18147705,3.99891216 6.92860193,4.00000302 C7.67705787,3.99891216 8.42924078,4.29371679 9,4.87868989 L8.312906,5.58311203 C7.92916094,5.19053918 7.43107769,4.99636629 6.92860193,4.99582086 C6.4266586,4.99636629 5.92910777,5.19053918 5.5452296,5.58311203 C5.16228318,5.97513946 4.97300622,6.48593415 4.97247379,7.00231949 C4.97300622,7.51584133 5.16308182,8.02472702 5.54602824,8.41757259 C5.92857535,8.80905458 6.42625928,9.00350019 6.92860193,9.00404561 C7.43107769,9.00350019 7.92929404,8.80905458 8.31197426,8.41702716 L8.99986689,9.12117659 C8.42937389,9.70601333 7.67812272,9.99999981 6.93046542,9.99999981 C6.18094463,10.0002725 5.42836239,9.70601333 4.8580025,9.12117659 Z" fill="#FFFFFF"></path>
+                            </g>
+                        </svg>
+                    </span>
+                </div>
+                {{#if barWithLogo}}
+                    {{> logo }}
+                {{/if}}
+
+                <!-- bar nav links -->
+                <nav data-deliverance-element="nav">
+                    {{> menu-list }}
+                </nav>
+            </div>
+        </div>
+        {{> bar-bottom }}
+        {{> bar-top }}
+    </div>
+</div>
+
+<!-- full screen menu region -->
+<div id="region-full-screen-menu" class="hide" data-deliverance-region="full-menu">
+    <span id="full-menu-close" class="ico-button" data-deliverance-element="close">
+        <svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <path d="M6.08578644,7.49719826 L0,13.5829847 L1.41421356,14.9971983 L7.5,8.91141182 L13.4378306,14.8492424 L14.8520441,13.4350288 L8.91421356,7.49719826 L14.8492424,1.56216942 L13.4350288,0.147955855 L7.5,6.0829847 L1.4170153,8.8817842e-16 L0.00280174029,1.41421356 L6.08578644,7.49719826 Z" fill="#000000"></path>
+            </g>
+        </svg>
+    </span>
+    {{> menu-list }}
+</div>

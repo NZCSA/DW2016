@@ -1,0 +1,36 @@
+---
+layout              : layout-2.hbs
+titleSuffix         : " - Events Example 2"
+barWithLogo         : true
+backgroundImages    : ["../media/images/09.jpg"]
+backgroundOverlay   : true
+---
+{{> background-image }}
+<div id="region-page-four" class="region region-dark-background region-page page-center" data-deliverance-region="page-four">
+    <!-- page title -->
+    <div class="page-title hidden" data-deliverance-element="title">
+        <div class="page-title-content">
+            <h6>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="100px" height="100px" viewBox="5.0 -10.0 100.0 135.0" xml:space="preserve">
+                    <path d="M50,0C22.388,0,0,22.388,0,50s22.388,50,50,50s50-22.388,50-50S77.612,0,50,0z M50.098,62.293 c-6.836,0-12.391-5.543-12.391-12.391c0-6.86,5.555-12.402,12.391-12.402c6.86,0,12.402,5.542,12.402,12.402 C62.5,56.75,56.958,62.293,50.098,62.293z" />
+                </svg>
+                The Lorem Ipsus
+            </h6>
+            <h2>2015 Tour</h2>
+        </div>
+    </div>
+    <!-- page block -->
+    <div class="page-box hidden">
+        <div class="region-image" data-deliverance-region="image">
+            <img src="../media/images/09.b.jpg" class="image-preload image-lightbox" alt="">
+        </div>
+    </div>
+    <!-- page block -->
+    <div class="page-box hidden">
+        {{> events-long }}
+    </div>
+    <!-- page block -->
+    <div class="page-box hidden">
+        {{> grid }}
+    </div>
+</div>

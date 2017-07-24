@@ -1,0 +1,53 @@
+---
+layout              : layout-2.hbs
+titleSuffix         : " - Example Page Layout 2"
+barWithLogo         : true
+backgroundImages    : ["../media/images/05.jpg"]
+backgroundOverlay   : false
+---
+{{> background-image }}
+<article id="region-page-two" class="region region-dark-background region-icons-bar-fill region-page" data-deliverance-region="page-two">
+    <!-- page-sidebar -->
+    <div id="page-sidebar" class="hidden" data-deliverance-element="sidebar">
+        <div class="widget">
+            {{> share-on }}
+        </div>
+        {{> widget-search }}
+        {{> widget-text }}
+    </div>
+    <!-- page-content -->
+    <div id="page-content" class="hidden" data-deliverance-element="content">
+        <div class="in">
+            <!-- page title + feature image -->
+            <h1>Vestibulum Ante<br />Ipsum Primis In Faucibus</h1>
+            <div id="page-featured-area">
+                {{> map}}
+            </div>
+            <!-- page content -->
+            <div id="page-content-area">
+                <!-- text content here -->
+            </div>
+            <!-- page regions -->
+            <div id="page-regions">
+                {{> contact-form}}
+                <div class="region-content">
+                    <div class="column column-6">
+                        <div class="column-content">
+                            <h5>Ut In Nulla Enim</h5>
+                            <p>Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
+                            <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci.</p>
+                        
+                        </div>
+                    </div>
+                    <div class="column column-6">
+                        <div class="column-content">
+                            <h5>Sed Auctor Neque</h5>
+                            <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci.</p>
+                            <p>Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>

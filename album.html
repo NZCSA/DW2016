@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+
+<html lang="en" data-ajax-load="1">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>Album | DreamWorks Singing Contest - NZCSA</title>
+        <link rel="shortcut icon" href="assets/favicon.ico">
+
+   		<link rel="apple-touch-icon" href="assets/favicon.ico">
+
+    	<link rel="apple-touch-icon" sizes="72x72" href="assets/favicon.ico">
+
+    	<link rel="apple-touch-icon" sizes="114x114" href="assets/favicon.ico">
+
+
+        <!-- meta -->
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <!-- css -->
+
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+            <aside id="off-screen-sidebar" class="hidden closed sidebar-left" data-deliverance-region="sidebar">
+
+                <span id="off-close" class="ico-button" data-deliverance-element="close">
+
+                    <svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+
+                            <path d="M6.08578644,7.49719826 L0,13.5829847 L1.41421356,14.9971983 L7.5,8.91141182 L13.4378306,14.8492424 L14.8520441,13.4350288 L8.91421356,7.49719826 L14.8492424,1.56216942 L13.4350288,0.147955855 L7.5,6.0829847 L1.4170153,8.8817842e-16 L0.00280174029,1.41421356 L6.08578644,7.49719826 Z" fill="#000000"></path>
+
+                        </g>
+
+                    </svg>
+
+                </span>
+
+                <!-- widget -->
+
+                <div class="widget">
+
+                    <nav>
+
+                    <ul>
+
+                            		<li>
+
+                                	<a href="index.html">Home</a>
+
+                           			</li>
+
+                            		<li>
+
+                                	<a href="album.html">Album</a>
+
+                            		</li>
+
+                            		<li>
+
+                                	<a href="blog.html">Blog</a>
+
+                            		</li>
+
+                            		<li>
+
+                                	<a href="heats.html">Heats</a>
+
+                           			</li>
+
+                            		<li>
+
+                                	<a href="finals.html">Finals</a>
+
+                            		</li>
+
+                            		<li>
+
+                                	<a href="gallery.html">Gallery</a>
+
+                            		</li>
+
+                            		<li>
+
+                                	<a href="http://bbs.skykiwi.com/forum.php?mod=forumdisplay&fid=193">Forum</a>
+
+                            		</li>
+
+                            		<li>
+
+                                	<a href="sponsors.html">Sponsors</a>
+
+                            		</li>
+
+                            		<li>
+
+                     </ul>
+
+                    </nav>
+
+                </div>
+
+                <!-- widget -->
+
+                <div class="widget">
+
+                    <h5>关于</h5>
+
+                    <h5>About</h5>
+
+                    <p>This is the 12th year for the DreamWorks singing contest, this year, it will be the first time for DreamWorks to expand beyond the Chinese market with the inclusion of ASIA as co-organisers.</p>
+
+                </div>
+
+            </aside>
+
+            <div id="container" class="bar-bottom bar-with-logo">
+
+                <div id="scroll"></div>
+
+                <div id="playlist" class="hide" data-deliverance-region="playlist" data-default-path="assets/json/playlist.json">
+
+                    <canvas id="playlist-background" data-deliverance-element="background"></canvas>
+
+                    <div id="playlist-background-overlay"></div>
+
+                    <div id="playlist-container" data-deliverance-element="container">
+
+                        <div id="playlist-content" data-deliverance-element="content">
+
+                            <div id="playlist-left" data-deliverance-element="left"></div>
+
+                            <div id="playlist-right" data-deliverance-element="right">
+
+                                <!-- amazon icon -->
+
+                                <a href="--icourl--" target="_blank" class="right history-ignore hide ico-button" data-deliverance-element="ico-amazon">
+
+                                    <svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+
+                                            <path d="M11.6239456,5.56418779 C11.0209938,5.6073951 10.3260514,5.65101786 9.63067303,5.73867885 C8.56558883,5.87245534 7.49919671,6.04777732 6.61940141,6.44619859 C4.90515209,7.10843373 3.74633351,8.52139593 3.74633351,10.5961778 C3.74633351,13.2023265 5.50679606,14.5267968 7.73157079,14.5267968 C8.47229042,14.5267968 9.07611425,14.437474 9.63023706,14.3061903 C10.5113403,14.0407146 11.2524959,13.5554632 12.1335991,12.6709597 C12.6428166,13.3340258 12.7823282,13.6439551 13.6621235,14.349813 C13.8936257,14.437474 14.1251278,14.437474 14.3099807,14.3061903 C14.8667194,13.8641462 15.8402491,13.0685501 16.3494666,12.6281678 C16.5818407,12.451184 16.5351914,12.1861238 16.3952438,11.9667636 C15.8868983,11.3477358 15.3759369,10.8176153 15.3759369,9.6248442 L15.3759369,5.65101786 C15.3759369,3.97299543 15.5154485,2.42708766 14.2179902,1.28043207 C13.152906,0.353967595 11.484434,-8.8817842e-16 10.1869757,-8.8817842e-16 L9.63023706,-8.8817842e-16 C7.26813055,0.130452846 4.76520448,1.10261737 4.20933777,3.88533444 C4.11647534,4.23930204 4.39506265,4.37058579 4.58078752,4.41420856 L7.17483214,4.72330702 C7.4542914,4.67968425 7.59205915,4.45783133 7.63870835,4.23888658 C7.87021049,3.26672206 8.70379255,2.7806398 9.63023706,2.6921479 L9.81683388,2.6921479 C10.3727006,2.6921479 10.9747805,2.91358538 11.2991451,3.35521396 C11.6697229,3.88491899 11.6235097,4.59202327 11.6235097,5.21022019 L11.6235097,5.56418779 L11.6239456,5.56418779 Z M11.1147281,10.8176153 C10.7903636,11.4341504 10.2336249,11.8317408 9.63067303,11.9667636 C9.53868254,11.9667636 9.40004285,12.0103864 9.26009523,12.0103864 C8.24166024,12.0103864 7.63870835,11.2588284 7.63870835,10.1553801 C7.63870835,8.74200249 8.5193756,8.07976735 9.63023706,7.77066888 C10.2331889,7.63855422 10.9281313,7.59368509 11.6235097,7.59368509 L11.6235097,8.12422102 C11.6239456,9.13959285 11.6697229,9.93394267 11.1147281,10.8176153 Z M20.9965122,14.9783963 L20.9965122,14.9775654 C20.9877927,14.7681762 20.9411435,14.6098878 20.850025,14.4777732 L20.8408695,14.465725 L20.8299702,14.4528459 C20.7371077,14.3564603 20.648605,14.3199003 20.5513829,14.2791857 C20.2645121,14.1736602 19.8464131,14.1175737 19.3424273,14.1159119 C18.980569,14.1159119 18.5803449,14.1483174 18.1801209,14.2318238 L18.179249,14.2064811 L17.7746652,14.3348567 L17.7676896,14.3381803 L17.5396753,14.4088076 L17.5396753,14.4183631 C17.2724233,14.5238887 17.0287139,14.6560033 16.8024434,14.8117989 C16.6629318,14.912339 16.5452188,15.0448691 16.5386792,15.248442 C16.5351914,15.3589531 16.5940479,15.4860823 16.693014,15.5616951 C16.7902362,15.6373079 16.9040254,15.6622351 17.0038634,15.6622351 C17.0278419,15.6622351 17.0496406,15.6614042 17.0692595,15.6580806 L17.0888783,15.6564188 L17.1041374,15.653926 C17.3016335,15.6140424 17.5893763,15.5874533 17.9259481,15.5417532 C18.2145628,15.5118405 18.5210525,15.4889904 18.7869966,15.4889904 C18.9753373,15.4881595 19.1436232,15.5002077 19.2595923,15.5247196 C19.3175768,15.5359369 19.3607382,15.5504778 19.3855887,15.5621105 C19.3934362,15.5654342 19.3991039,15.5687578 19.4025917,15.5708351 C19.4078234,15.5862069 19.4152349,15.6252597 19.414363,15.6813461 C19.4169788,15.8932281 19.3215005,16.285833 19.1928882,16.6688824 C19.0668918,17.0527628 18.913429,17.437474 18.8114111,17.6929788 C18.7874325,17.7523889 18.7721734,17.8163689 18.7721734,17.8869963 C18.7704296,17.9900291 18.8140269,18.1142501 18.9077613,18.1969256 C18.9988799,18.2796012 19.1165928,18.3120066 19.2159949,18.3120066 L19.2203546,18.3120066 C19.3694577,18.3103448 19.4954541,18.2542584 19.6044476,18.1732447 C20.6298582,17.2945575 20.9856129,15.8932281 21,15.1034483 L20.9965122,14.9783963 Z M17.9582102,16.1940174 C17.8535765,16.1931865 17.7463269,16.2168675 17.6464889,16.2613211 C17.5331357,16.3045285 17.4184745,16.3539676 17.310789,16.3975904 L17.1507866,16.4607395 L16.942827,16.5392605 L16.942827,16.5417532 C14.689714,17.4125467 12.3232477,17.9227254 10.1333509,17.9675945 C10.0531317,17.9700872 9.97247656,17.9700872 9.89312931,17.9700872 C6.44980757,17.9717491 3.63995588,16.4495222 0.80394576,14.94973 C0.704543715,14.9002908 0.604705695,14.8741172 0.504867675,14.8741172 C0.376691353,14.8741172 0.246335162,14.9194017 0.151292855,15.00457 C0.0558145739,15.0897383 -0.000862031106,15.2139593 9.91666344e-06,15.3398421 C-0.000426057221,15.5039468 0.0924363802,15.653926 0.221048676,15.7511425 C2.88223327,17.9526381 5.79846258,19.9983382 9.72004768,20 C9.79677908,20 9.87438243,19.9983382 9.95329371,19.9966764 C12.4475003,19.9430827 15.2699952,19.1404238 17.4594561,17.829248 L17.4720993,17.8209389 C17.7589701,17.6576651 18.045841,17.4719568 18.3161448,17.2658912 C18.4848667,17.1466556 18.6003997,16.9617781 18.5986558,16.7685916 C18.5934242,16.4262568 18.2878065,16.1940174 17.9582102,16.1940174 Z" id="amazon" fill="#000000" sketch:type="MSShapeGroup"></path>
+
+                                        </g>
+
+                                    </svg>
+
+                                </a>
+
+                                <!-- itunes icon -->
+
+                                <a href="--icourl--" target="_blank" class="right history-ignore hide ico-button" data-deliverance-element="ico-itunes">
+
+                                    <svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+
+                                            <path d="M17,1.77635684e-15 L4.99487158,1.75788749 L4.99797703,14.5665991 C4.99797703,14.5665991 2.90653372,14.6802448 2.49971969,14.8003929 C0.723557244,15.3255424 -0.349220653,16.8761632 0.103709312,18.2637786 C0.55656164,19.6512461 2.36370096,20.3504849 4.13986341,19.8254093 C5.60167662,19.3932157 7.01364736,18.2169311 7.08864399,17.0577894 C7.0899638,17.0584545 7.09058489,17.0586022 7.09058489,17.0586022 L7.09058489,17.0213607 C7.09369034,16.9546364 7.09407853,16.887912 7.09058489,16.8211877 L7.09058489,5.99588156 L15.4897418,4.93560717 L15.4895865,13.5486647 L14.1597549,13.4918419 C14.0335184,13.4858566 13.9058843,13.4854133 13.7771634,13.4910291 L13.7371031,13.4908813 L13.7398204,13.4928764 C13.413127,13.5097976 13.0811543,13.5644037 12.7535293,13.6613498 C10.9772892,14.1864254 9.90466656,15.7370462 10.3574412,17.1245138 C10.8103712,18.5121291 12.6175105,19.2112201 14.393673,18.6861445 C15.8714016,18.2492958 16.945577,17.1017551 16.9995342,15.9293129 L17,1.77635684e-15 L17,1.77635684e-15 Z" id="itunes" fill="#000000" sketch:type="MSShapeGroup"></path>
+
+                                        </g>
+
+                                    </svg>
+
+                                </a>
+
+                                <!-- tracks list  -->
+
+                                <ul data-deliverance-element="tracks-list"></ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="icons-bar" data-deliverance-region="icons-bar">
+
+                    <!-- menu icon -->
+
+                    <span id="ico-menu" class="left ico ico-button hidden" data-deliverance-element="menu">
+
+                        <svg width="20px" height="14px" viewBox="0 0 20 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+
+                                <path d="M0,12 L20,12 L20,14 L0,14 L0,12 Z M0,8 L20,8 L20,10 L0,10 L0,8 Z M0,4 L20,4 L20,6 L0,6 L0,4 Z M0,0 L20,0 L20,2 L0,2 L0,0 Z" id="ico-menu" fill="#FFFFFF"></path>
+
+                            </g>
+
+                        </svg>
+
+                    </span>
+
+                    <!-- social icons -->
+
+                    <a href="https://www.facebook.com/events/1512238025734676/1522347874723691/" target="_blank" class="ico right ico-button hidden history-ignore"><svg viewBox="0 0 512 512"><path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"/></svg><!--[if lt IE 9]><em>Facebook</em><![endif]-->
+
+                    </a>
+
+                    <a href="https://www.youtube.com/channel/UCjWiXW6Grz3ExAhb3a9lWiw" target="_blank" class="ico right ico-button hidden history-ignore">
+
+                        <svg viewBox="0 0 512 512"><path d="M422.6 193.6c-5.3-45.3-23.3-51.6-59-54 -50.8-3.5-164.3-3.5-215.1 0 -35.7 2.4-53.7 8.7-59 54 -4 33.6-4 91.1 0 124.8 5.3 45.3 23.3 51.6 59 54 50.9 3.5 164.3 3.5 215.1 0 35.7-2.4 53.7-8.7 59-54C426.6 284.8 426.6 227.3 422.6 193.6zM222.2 303.4v-94.6l90.7 47.3L222.2 303.4z"/></svg><!--[if lt IE 9]><em>YouTube</em><![endif]-->
+
+                    </a>
+
+                    <!-- loader icon -->
+
+                    <span id="ico-loader" class="ico hidden" data-deliverance-element="loader">
+
+                        <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+
+                                <path d="M0,10.5 C0.0108448183,4.76869852 4.70096667,0 10.5,0 C13.7554667,0 16.6642,1.4819 18.5894333,3.80706667 L16.4157,5.9808 C15.0553667,4.19976667 12.9159333,3.04826667 10.5,3.04826667 C6.73866667,3.04826667 3.63976667,5.83333333 3,9 L7,9 C7,9 1.00525658,14.9611228 1,15 C0.365689917,13.4393228 0.0108448183,12.1037652 0,10.5 Z M21,10.5 C20.9891552,16.2313015 16.2990333,21 10.5,21 C7.24453333,21 4.3358,19.5181 2.41056667,17.1929333 L4.5843,15.0192 C5.94463333,16.8002333 8.08406667,17.9517333 10.5,17.9517333 C14.2613333,17.9517333 17.3602333,15.1666667 18,12 L14,12 C14,12 19.9947434,6.0388772 20,6 C20.6343101,7.5606772 20.9891552,8.89623481 21,10.5 Z" fill="#000000"></path>
+
+                            </g>
+
+                        </svg>
+
+                    </span>
+
+                </div>
+
+                <!-- bar region -->
+
+                <div id="bar" class="bar bar-player bar-logo" data-deliverance-region="bar">
+
+                    <div id="bar-container" class="toggle-front" data-deliverance-element="container">
+
+                        <!-- bar front -->
+
+                        <div id="bar-front" class="bar-nav" data-deliverance-element="front">
+
+                            <!-- audio player -->
+
+                            <div id="bar-nav-player" data-deliverance-element="nav-player">
+
+                                <!-- progress bar -->
+
+                                <span id="bar-nav-player-progress" data-deliverance-element="player-progress"></span>
+
+                                <span class="nav-player-ico">
+
+                                    <svg width="12px" height="14px" viewBox="0 0 12 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+
+                                            <path d="M2.46294539,10.0001481 C0.948054107,10.0001481 0,10.8956023 0,11.9996647 C0,13.1044912 0.728279262,14 2.2433466,14 C3.75923553,14 4.48839507,13.1044912 4.48839507,11.9996647 L4.48839507,5.99936842 L11.0611007,3.00009357 L11.0611007,9.40881871 C10.1221428,9.15589084 10.6811162,9.00038986 10.0601129,9.00038986 C8.54598449,9.00038986 7.6393619,9.89589864 7.6393619,10.9999064 C7.6393619,12.1047875 8.3042615,13.0002417 9.81927016,13.0002417 C11.3351591,13.0002417 12,12.1047875 12,10.9999064 L12,0 L3.54937843,3.99990643 L3.54937843,10.4094503 C2.61047916,10.1564678 3.08406608,10.0001481 2.46294539,10.0001481 Z" fill="#000000" sketch:type="MSShapeGroup"></path>
+
+                                        </g>
+
+                                    </svg>
+
+                                </span>
+
+                            </div>
+
+                            <!-- bar logo & nav -->
+
+                            <div id="bar-content" data-deliverance-element="front-content">
+
+                                <div id="bar-icons" data-deliverance-element="front-icons">
+
+                                    <!-- ico full screen menu -->
+
+                                    <span class="ico-button hide" id="bar-ico-full-menu" data-deliverance-element="ico-full-menu">
+
+                                        <svg width="20px" height="14px" viewBox="0 0 20 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+
+                                                <path d="M0,12 L20,12 L20,14 L0,14 L0,12 Z M0,8 L20,8 L20,10 L0,10 L0,8 Z M0,4 L20,4 L20,6 L0,6 L0,4 Z M0,0 L20,0 L20,2 L0,2 L0,0 Z" fill="#FFFFFF"></path>
+
+                                            </g>
+
+                                        </svg>
+
+                                    </span>
+
+                                    <!-- ico full screen -->
+
+                                    <span class="ico-button" id="bar-ico-full-screen" data-deliverance-element="ico-full-screen">
+
+                                        <svg width="17px" height="14px" viewBox="0 0 17 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+
+                                                <path d="M17,0 L17,11 L0,11 L0,0 L17,0 Z M2,2 L2,9 L15,9 L15,2 L2,2 Z M13,12 L13,14 L9.61329515,14 L4,14 L4,12 L13,12 Z" fill="#FFFFFF"></path>
+
+                                            </g>
+
+                                        </svg>
+
+                                    </span>
+
+                                    <!-- ico footer -->
+
+                                    <span class="ico-button" id="bar-ico-footer" data-deliverance-element="ico-copyright">
+
+                                        <svg width="14px" height="15px" viewBox="0 0 14 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+
+                                                <path d="M0,6.99966829 C0.000995260664,3.13412785 3.13424171,0 7.00033175,0 C10.8669194,0 14,3.1342937 14,6.99966829 C14,10.8657063 10.8667536,13.9993366 7.00033175,14 C3.13424171,13.9993366 0.000995260664,10.866038 0,6.99966829 Z M2,6.99971319 C2.00602375,9.76099925 4.23925764,11.994694 7.00028685,12 C9.76160289,11.994694 11.9952671,9.76099925 12,6.99971319 C11.9952671,4.23900075 9.76160289,2.00501922 7.00028685,2 C4.23940107,2.00516262 2.00602375,4.23900075 2,6.99971319 Z M4.8580025,9.12117659 C4.28804192,8.53729435 3.99973397,7.7679661 4.00000019,7.00231949 C3.99973397,6.23558203 4.28617843,5.46325391 4.85853492,4.87868989 C5.42889482,4.293035 6.18147705,3.99891216 6.92860193,4.00000302 C7.67705787,3.99891216 8.42924078,4.29371679 9,4.87868989 L8.312906,5.58311203 C7.92916094,5.19053918 7.43107769,4.99636629 6.92860193,4.99582086 C6.4266586,4.99636629 5.92910777,5.19053918 5.5452296,5.58311203 C5.16228318,5.97513946 4.97300622,6.48593415 4.97247379,7.00231949 C4.97300622,7.51584133 5.16308182,8.02472702 5.54602824,8.41757259 C5.92857535,8.80905458 6.42625928,9.00350019 6.92860193,9.00404561 C7.43107769,9.00350019 7.92929404,8.80905458 8.31197426,8.41702716 L8.99986689,9.12117659 C8.42937389,9.70601333 7.67812272,9.99999981 6.93046542,9.99999981 C6.18094463,10.0002725 5.42836239,9.70601333 4.8580025,9.12117659 Z" fill="#FFFFFF"></path>
+
+                                            </g>
+
+                                        </svg>
+
+                                    </span>
+
+                                </div>
+
+                                <a id="logo" href="index.html" data-deliverance-element="logo">
+
+                                    <img src="media/images/logo-nzcsa.png">
+
+                                </a>
+
+                                <!-- bar nav links -->
+
+                                <nav data-deliverance-element="nav">
+
+                       			<ul>
+
+                            		<li>
+
+                                	<a href="index.html">Home</a>
+
+                           			</li>
+
+                            		<li>
+
+                                	<a href="album.html">Album</a>
+
+                            		</li>
+
+                            		<li>
+
+                                	<a href="blog.html">Blog</a>
+
+                            		</li>
+
+                            		<li>
+
+                                	<a href="heats.html">Heats</a>
+
+                           			</li>
+
+                            		<li>
+
+                                	<a href="finals.html">Finals</a>
+
+                            		</li>
+
+                            		<li>
+
+                                	<a href="gallery.html">Gallery</a>
+
+                            		</li>
+
+                            		<li>
+
+                                	<a href="http://bbs.skykiwi.com/forum.php?mod=forumdisplay&fid=193" target="_blank">Forum</a>
+
+                            		</li>
+
+                            		<li>
+
+                                	<a href="sponsors.html">Sponsors</a>
+
+                            		</li>
+
+                            		<li>
+
+                        		</ul>
+
+                                </nav>
+
+                            </div>
+
+                        </div>
+
+                        <!-- bar copyright -->
+
+                        <div id="bar-bottom" class="bar-copyright" data-deliverance-element="bottom">
+
+                            <div id="bar-bottom-nav" data-deliverance-element="copy-nav">
+
+                                <svg width="11px" height="8px" viewBox="0 0 11 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+
+                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+
+                                        <g sketch:type="MSLayerGroup" fill="#000000" transform="translate(5.500000, 4.000000) rotate(-180.000000) translate(-5.500000, -4.000000) translate(0.000000, 0.000000)">
+
+                                            <path d="M0,0 L11,0 L5.5,8 L0,0 L0,0 Z" id="triangle"></path>
+
+                                        </g>
+
+                                    </g>
+
+                                </svg>
+
+                            </div>
+
+                            <div id="bar-bottom-content">
+
+                                <p>Copyright © 2015 New Zealand Chinese Students' Association. All right reserved.</p>
+
+                            </div>
+
+                        </div>
+
+                        <!-- player bar -->
+
+                        <div id="bar-top" class="bar-player" data-deliverance-element="top" data-deliverance-region="player">
+
+                            <div id="bar-player-button" data-deliverance-element="player-nav">
+
+                                <svg width="11px" height="8px" viewBox="0 0 11 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+
+                                        <path d="M0,0 L11,0 L5.5,8 L0,0 Z" id="triangle" fill="#000000"></path>
+
+                                    </g>
+
+                                </svg>
+
+                            </div>
+
+                            <div id="bar-player-track">
+
+                                <div id="bar-player-track-name" data-deliverance-element="track-name"></div>
+
+                                <div id="bar-player-author" data-deliverance-element="track-artist"></div>
+
+                                <div id="bar-player-commands">
+
+                                    <span id="bar-player-command-prev" data-deliverance-element="prev">
+
+                                        <svg width="24px" height="12px" viewBox="0 0 24 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+
+                                                <path d="M0,7 L19.9776864,6.96633378 L17.0235927,11 L17.9506835,12 L24,6 L18.0202223,0 L17.0235927,1 L19.9776864,4.96803799 L0,5.010234 L0,7 Z" id="prev" fill="#323746" transform="translate(12.000000, 6.000000) rotate(-180.000000) translate(-12.000000, -6.000000) "></path>
+
+                                            </g>
+
+                                        </svg>
+
+                                    </span>
+
+                                    <span id="bar-player-command-play" data-deliverance-element="play">
+
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+
+                                            <g>
+
+                                                <path d="M256,0C114.609,0,0,114.609,0,256s114.609,256,256,256s256-114.609,256-256S397.391,0,256,0z M256,472 c-119.297,0-216-96.703-216-216S136.703,40,256,40s216,96.703,216,216S375.297,472,256,472z"></path>
+
+                                                <polygon points="192,336 352,256 192,176"></polygon>
+
+                                            </g>
+
+                                        </svg>
+
+                                    </span>
+
+                                    <span id="bar-player-command-pause" class="hide" data-deliverance-element="pause">
+
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+
+                                            <g>
+
+                                                <path d="M256,0C114.609,0,0,114.609,0,256s114.609,256,256,256s256-114.609,256-256S397.391,0,256,0z M256,472 c-119.297,0-216-96.703-216-216S136.703,40,256,40s216,96.703,216,216S375.297,472,256,472z"></path>
+
+                                                <g>
+
+                                                    <polygon points="271.5,336.5 335.5,336.5 335.5,211.5 335.5,176.5 271.5,176.5"></polygon>
+
+                                                    <rect x="175.5" y="176.5" width="64" height="160"></rect>
+
+                                                </g>
+
+                                            </g>
+
+                                        </svg>
+
+                                    </span>
+
+                                    <span id="bar-player-command-playlist" data-deliverance-element="playlist">
+
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+
+                                            <path d="M256,0C114.609,0,0,114.609,0,256s114.609,256,256,256s256-114.609,256-256S397.391,0,256,0z M256,472 c-119.297,0-216-96.703-216-216S136.703,40,256,40s216,96.703,216,216S375.297,472,256,472z"></path>
+
+                                            <g>
+
+                                                <rect x="151.5" y="184.5" fill-rule="evenodd" clip-rule="evenodd" width="192" height="32"></rect>
+
+                                                <rect x="151.5" y="248.5" fill-rule="evenodd" clip-rule="evenodd" width="192" height="32"></rect>
+
+                                                <rect x="151.5" y="312.5" fill-rule="evenodd" clip-rule="evenodd" width="192" height="32"></rect>
+
+                                            </g>
+
+                                        </svg>
+
+                                    </span>
+
+                                    <span id="bar-player-command-next" data-deliverance-element="next">
+
+                                        <svg width="24px" height="12px" viewBox="0 0 24 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+
+                                                <path d="M-3.55271368e-15,7 L19.9776864,6.96633378 L17.0235927,11 L17.9506835,12 L24,6 L18.0202223,-5.32907052e-15 L17.0235927,1 L19.9776864,4.96803799 L-3.55271368e-15,5.010234 L-3.55271368e-15,7 Z" fill="#323746"></path>
+
+                                            </g>
+
+                                        </svg>
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- full screen menu region -->
+
+                <div id="region-full-screen-menu" class="hide" data-deliverance-region="full-menu">
+
+                    <span id="full-menu-close" class="ico-button" data-deliverance-element="close">
+
+                        <svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+
+                                <path d="M6.08578644,7.49719826 L0,13.5829847 L1.41421356,14.9971983 L7.5,8.91141182 L13.4378306,14.8492424 L14.8520441,13.4350288 L8.91421356,7.49719826 L14.8492424,1.56216942 L13.4350288,0.147955855 L7.5,6.0829847 L1.4170153,8.8817842e-16 L0.00280174029,1.41421356 L6.08578644,7.49719826 Z" fill="#000000"></path>
+
+                            </g>
+
+                        </svg>
+
+                    </span>
+
+                       <ul>
+
+                            		<li>
+
+                                	<a href="index.html">Home</a>
+
+                           			</li>
+
+                            		<li>
+
+                                	<a href="album.html">Album</a>
+
+                            		</li>
+
+                            		<li>
+
+                                	<a href="blog.html">Blog</a>
+
+                            		</li>
+
+                            		<li>
+
+                                	<a href="heats.html">Heats</a>
+
+                           			</li>
+
+                            		<li>
+
+                                	<a href="finals.html">Finals</a>
+
+                            		</li>
+
+                            		<li>
+
+                                	<a href="gallery.html">Gallery</a>
+
+                            		</li>
+
+                            		<li>
+
+                                	<a href="http://bbs.skykiwi.com/forum.php?mod=forumdisplay&fid=193">Forum</a>
+
+                            		</li>
+
+                            		<li>
+
+                                	<a href="sponsors.html">Sponsors</a>
+
+                            		</li>
+
+                            		<li>
+
+                        		</ul>
+
+                </div>
+
+                <div id="content">
+
+                    <!-- deliverance-content -->
+
+                    <div id="background" class="background-images hidden" data-deliverance-region="background" data-background-delay="5000">
+
+                        <img src="media/images/albums/02-background.jpg" alt="" class="hidden">
+
+                        <div id="background-overlay"></div>
+
+                    </div>
+
+                    <article id="region-page-one" class="region region-dark-background region-page" data-deliverance-region="page-one">
+
+                        <div id="page-top">
+
+                            <div id="share-on" data-deliverance-region="share-on">
+
+                                <span id="share-on-select" class="hidden" data-deliverance-element="select">
+
+                                    <svg width="9px" height="6px" viewBox="0 0 11 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" data-deliverance-element="triangle">
+
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+
+                                            <path d="M0,0 L11,0 L5.5,8 L0,0 Z" id="triangle" fill="#000000" sketch:type="MSShapeGroup"></path>
+
+                                        </g>
+
+                                    </svg>
+
+                                    <var data-deliverance-element="select-text">select</var>
+
+                                </span>
+
+                                <span id="share-on-label" class="hidden" data-deliverance-element="label">
+
+                                    share on
+
+                                </span>
+
+                                <div id="share-on-options" class="hide" data-deliverance-element="options">
+
+                                    <div id="share-on-facebook" data-url="http://www.nzcsa.com/dw/album.html">facebook</div>
+
+                                </div>
+
+                            </div>
+
+                            <div id="featured-image">
+
+                                <img src="media/images/albums/02-featured.jpg" class="image-preload" alt="" data-deliverance-element="featured">
+
+                            </div>
+
+                            <h1 class="hidden" data-deliverance-element="title">DreamWorks 2014
+
+                                <br />2014新秀梦工厂决赛歌单</h1>
+
+                        </div>
+
+                        <div id="page-content" class="hidden" data-deliverance-element="content">
+
+                            <!-- content -->
+
+                            <div id="page-content-meta" data-deliverance-element="meta">
+
+                                <p>All 21 songs in the 2014 DreamWorks Finals Night</p>
+
+                                <p>Listen now for FREE</p>
+
+                            </div>
+
+                            <!-- page regions -->
+
+                            <div id="page-regions">
+
+                                <div class="region-tracklist" data-deliverance-region="tracklist" data-tracklist-type="mp3" data-title="DreamWorks 2015" data-author="Finals Album" data-cover="media/images/albums/02.jpg">
+
+                                    <h4>FINALS ALBUM</h4>
+
+                                    <div class="tracklist-cover">
+
+                                        <img src="media/images/albums/02.jpg" alt="">
+
+                                    </div>
+
+                                    <ul data-deliverance-element="tracks">
+
+                                        <li data-index="0" data-title="青苹果乐园" data-author="伍子杰 隋竟伟 郭志成" data-duration="3:39" data-mp3="media/music/1.mp3">
+
+                                            <span>1.</span>青苹果乐园 - 伍子杰 隋竟伟 郭志成</li>
+
+                                        <li data-index="1" data-title="至少还有你" data-author="蔡圣琳 原靖雯 丁蓓" data-duration="4:28" data-mp3="media/music/2.mp3">
+
+                                            <span>2.</span>至少还有你 - 蔡圣琳 原靖雯 丁蓓</li>
+
+                                        <li data-index="2" data-title="Fly me to the moon & 她说" data-author="张玮玥 高梦竹 张鸿钰" data-duration="4:43" data-mp3="media/music/3.mp3">
+
+                                            <span>3.</span>Fly me to the moon & 她说 - 张玮玥 高梦竹 张鸿钰</li>
+
+                                        <li data-index="3" data-title="如果还有明天" data-author="於钇权 王之旗 施融融" data-duration="5:13" data-mp3="media/music/4.mp3">
+
+                                            <span>4.</span>如果还有明天 - 於钇权 王之旗 施融融</li>
+
+                                            <li data-index="4" data-title="我好想你" data-author="伍子杰" data-duration="1:58" data-mp3="media/music/5.mp3">
+
+                                            <span>5.</span>我好想你 - 伍子杰</li>
+
+                                            <li data-index="5" data-title="袖手旁观" data-author="隋竟伟" data-duration="1:52" data-mp3="media/music/6.mp3">
+
+                                            <span>6.</span>袖手旁观 - 隋竟伟</li>
+
+                                            <li data-index="6" data-title="趁早" data-author="郭志成" data-duration="1:49" data-mp3="media/music/7.mp3">
+
+                                            <span>7.</span>趁早 - 郭志成</li>
+
+                                            <li data-index="7" data-title="心在跳" data-author="蔡圣琳" data-duration="1:51" data-mp3="media/music/8.mp3">
+
+                                            <span>8.</span>心在跳 - 蔡圣琳</li>
+
+                                            <li data-index="8" data-title="情歌" data-author="原靖雯" data-duration="1:43" data-mp3="media/music/9.mp3">
+
+                                            <span>9.</span>情歌 - 原靖雯</li>
+
+                                            <li data-index="9" data-title="失恋无罪" data-author="丁蓓" data-duration="2:05" data-mp3="media/music/10.mp3">
+
+                                            <span>10.</span>失恋无罪 - 丁蓓</li>
+
+                                            <li data-index="10" data-title="眼泪成诗" data-author="张玮玥" data-duration="2:00" data-mp3="media/music/11.mp3">
+
+                                            <span>11.</span>眼泪成诗 - 张玮玥</li>
+
+                                            <li data-index="11" data-title="花火" data-author="高梦竹" data-duration="1:35" data-mp3="media/music/12.mp3">
+
+                                            <span>12.</span>花火 - 高梦竹</li>
+
+                                            <li data-index="12" data-title="到不了" data-author="张鸿钰" data-duration="2:01" data-mp3="media/music/13.mp3">
+
+                                            <span>13.</span>到不了 - 张鸿钰</li>
+
+                                            <li data-index="13" data-title="ALone in Lonely" data-author="於钇权" data-duration="2:04" data-mp3="media/music/14.mp3">
+
+                                            <span>14.</span>Alone in Lonely - 於钇权</li>
+
+                                            <li data-index="14" data-title="白日梦" data-author="王之旗" data-duration="1:42" data-mp3="media/music/15.mp3">
+
+                                            <span>15.</span>白日梦 - 王之旗</li>
+
+                                            <li data-index="15" data-title="空港" data-author="施融融" data-duration="2:00" data-mp3="media/music/16.mp3">
+
+                                            <span>16.</span>空港 - 施融融</li>
+
+                                            <li data-index="16" data-title="Home" data-author="伍子杰" data-duration="3:43" data-mp3="media/music/17.mp3">
+
+                                            <span>17.</span>Home - 伍子杰</li>
+
+                                            <li data-index="17" data-title="六月飞霜" data-author="郭志成" data-duration="4:13" data-mp3="media/music/18.mp3">
+
+                                            <span>18.</span>六月飞霜 - 郭志成</li>
+
+                                            <li data-index="18" data-title="幸福了然后呢" data-author="丁蓓" data-duration="5:06" data-mp3="media/music/19.mp3">
+
+                                            <span>19.</span>幸福了然后呢 -丁蓓</li>
+
+                                            <li data-index="19" data-title="我爱你中国" data-author="张鸿钰" data-duration="4:04" data-mp3="media/music/20.mp3">
+
+                                            <span>20.</span>我爱你中国 - 张鸿钰</li>
+
+                                            <li data-index="20" data-title="眼泪" data-author="於钇权" data-duration="3:46" data-mp3="media/music/21.mp3">
+
+                                            <span>21.</span>眼泪 - 於钇权</li>
+
+                                    </ul>
+
+                                </div>
+
+                    </article>
+
+                    <!-- /deliverance-content -->
+
+                </div>
+
+                <div id="mobile-footer" class="hidden" data-deliverance-region="mobile-footer">Copyright © 2015 New Zealand Chinese Students' Association. All right reserved.</div>
+
+            </div>
+
+        </div>
+
+        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+            <!-- Background of PhotoSwipe. 
+
+         It's a separate element, as animating opacity is faster than rgba(). -->
+
+            <div class="pswp__bg"></div>
+
+            <!-- Slides wrapper with overflow:hidden. -->
+
+            <div class="pswp__scroll-wrap">
+
+                <!-- Container that holds slides. 
+
+            PhotoSwipe keeps only 3 of them in DOM to save memory.
+
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+
+                <div class="pswp__container">
+
+                    <div class="pswp__item"></div>
+
+                    <div class="pswp__item"></div>
+
+                    <div class="pswp__item"></div>
+
+                </div>
+
+                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+
+                <div class="pswp__ui pswp__ui--hidden">
+
+                    <div class="pswp__top-bar">
+
+                        <!--  Controls are self-explanatory. Order can be changed. -->
+
+                        <div class="pswp__counter"></div>
+
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+
+                        <!-- element will get class pswp__preloader--active when preloader is running -->
+
+                        <div class="pswp__preloader">
+
+                            <div class="pswp__preloader__icn">
+
+                                <div class="pswp__preloader__cut">
+
+                                    <div class="pswp__preloader__donut"></div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+
+                        <div class="pswp__share-tooltip"></div>
+
+                    </div>
+
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+
+                    </button>
+
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+
+                    </button>
+
+                    <div class="pswp__caption">
+
+                        <div class="pswp__caption__center"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- javascript -->
+
+        <script src="assets/js/vendors/jquery-1.11.1.min.js"></script>
+
+        <script src="assets/js/vendors/jquery.sharrre.min.js"></script>
+
+        <script src="assets/js/vendors/packery.pkgd.min.js"></script>
+
+        <script src="http://connect.soundcloud.com/sdk.js"></script>
+
+        <!-- soundcloud sdk -->
+
+        <script src="assets/js/vendors/soundcloud.api.js"></script>
+
+        <!-- soundcloud widget api -->
+
+        <script src="assets/js/app.min.js"></script>
+
+    </body>
+
+</html>

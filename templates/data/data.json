@@ -1,0 +1,8 @@
+{
+    "title"             : "Noizu Html",
+    "titleSuffix"       : "",
+    "footerText"        : "© 2015 Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.",
+    "backgroundImages"  : ["../media/images/01.jpg", "../media/images/02.jpg"],
+    "backgroundOverlay" : true,
+    "layoutNumber"      : 1
+}

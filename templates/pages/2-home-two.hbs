@@ -1,0 +1,50 @@
+---
+layout              : layout-2.hbs
+titleSuffix         : " - Index Page"
+backgroundImages    : ["../media/images/18.jpg", "../media/images/19.jpg", "../media/images/20.jpg"]
+backgroundOverlay   : true
+---
+<div id="region-home" class="region region-full-screen region-dark-background home-boxes" data-deliverance-region="home">
+    {{> background-image}}
+    <div id="full-screen-content">
+        <!-- home claim -->
+        <div id="home-claim-container" class="claim-top-left hidden" data-deliverance-element="claim">
+            {{> home-claim}}
+        </div>
+        <!-- home boxes -->
+        <ul id="home-boxes-container" class="home-boxes-4" data-deliverance-element="boxes-container" data-bottom="100">
+            <li class="hidden">
+                <div class="home-boxes-content">
+                    <img class="image-preload" src="../media/images/thumbs/microphone.jpg" alt="">
+                    <h5>Class Aptent Taciti</h5>
+                    <p>Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor.</p>
+                    <a href="javascript:void(0)" class="border-button">details</a>
+                </div>
+            </li>
+            <li class="hidden">
+                <div class="home-boxes-content">
+                    <img class="image-preload" src="../media/images/thumbs/concert.jpg" alt="">
+                    <h5>Class Aptent Taciti</h5>
+                    <p>Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor.</p>
+                    <a href="javascript:void(0)" class="border-button">details</a>
+                </div>
+            </li>
+            <li class="hidden">
+                <div class="home-boxes-content">
+                    <img class="image-preload" src="../media/images/thumbs/mixer.jpg" alt="">
+                    <h5>Class Aptent Taciti</h5>
+                    <p>Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor.</p>
+                    <a href="javascript:void(0)" class="border-button">details</a>
+                </div>
+            </li>
+            <li class="hidden">
+                <div class="home-boxes-content">
+                    <img class="image-preload" src="../media/images/thumbs/crowd.jpg" alt="">
+                    <h5>Class Aptent Taciti</h5>
+                    <p>Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor.</p>
+                    <a href="javascript:void(0)" class="border-button">details</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

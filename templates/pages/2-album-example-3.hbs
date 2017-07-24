@@ -1,0 +1,32 @@
+---
+layout              : layout-2.hbs
+titleSuffix         : " - Album Example Three"
+barWithLogo         : true
+---
+<div id="region-page-three" class="region region-dark-background region-icons-bar-fill region-page" data-deliverance-region="page-three">
+    <div id="page-left" class="hidden" data-deliverance-element="left">
+        <div class="page-content">
+            <div class="page-content-in">
+                <div class="page-content-title">
+                    <h1>California</h1>
+                    <h5>out now</h5>
+                </div>
+                <div class="region-image" data-deliverance-region="image">
+                    <img src="../media/images/albums/01-featured.jpg" class="image-preload image-lightbox" alt="">
+                </div>
+                <p>In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                {{> events }}
+                <div class="content-spacer">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+    <div id="page-right" class="hidden" data-deliverance-element="right">
+        <div class="page-content">
+            <div class="page-content-in">
+                {{> tracklist-2 }} 
+                {{> grid }}
+                <div class="content-spacer">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+</div>

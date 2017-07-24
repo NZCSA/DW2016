@@ -1,0 +1,38 @@
+---
+layout              : layout-1.hbs
+titleSuffix         : " - Countdown Page"
+barWithLogo         : true
+backgroundImages    : ["../media/images/13b.jpg", "../media/images/13.jpg", "../media/images/13c.jpg"]
+backgroundOverlay   : false
+---
+{{> background-image }}
+<div id="countdown" class="region region-full-screen region-dark-background" data-deliverance-region="countdown">
+    <div id="full-screen-content">
+        <!-- countdown -->
+        <div id="countdown-container">
+            <ul id="countdown-content" data-deliverance-element="content" data-year="2015" data-month="7" data-day="7" data-hour="12">
+                <li class="hidden">
+                    <span data-deliverance-element="days">&nbsp;</span>
+                    <h6>days</h6>
+                </li>
+                <li class="hidden">
+                    <span data-deliverance-element="hours">&nbsp;</span>
+                    <h6>hours</h6>
+                </li>
+                <li class="hidden">
+                    <span data-deliverance-element="minutes">&nbsp;</span>
+                    <h6>minutes</h6>
+                </li>
+                <li class="hidden">
+                    <span data-deliverance-element="seconds">&nbsp;</span>
+                    <h6>seconds</h6>
+                </li>
+            </ul>
+        </div>
+        <!-- message -->
+        <div id="countdown-message" class="hidden" data-deliverance-element="message">
+            <h5>New Album Release</h5>
+            In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.
+        </div>
+    </div>
+</div>

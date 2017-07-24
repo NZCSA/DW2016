@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" data-ajax-load="1">
+{{> head}}
+<body>
+<div id="wrapper">
+    {{> off-screen-sidebar }}
+    <div id="container" class="{{containerClass}}">
+        <div id="scroll"></div>
+        {{> body }}
+        <div id="mobile-footer" class="hidden" data-deliverance-region="mobile-footer">{{ footerText }}</div>
+    </div>
+</div>
+{{> photoswipe }}
+<!-- javascript -->
+<script src="{{ assets }}/js/vendors/jquery-1.11.1.min.js"></script>
+<script src="{{ assets }}/js/vendors/jquery.sharrre.min.js"></script>
+<script src="{{ assets }}/js/vendors/packery.pkgd.min.js"></script>
+<script src="http://connect.soundcloud.com/sdk.js"></script><!-- soundcloud sdk -->
+<script src="{{ assets }}/js/vendors/soundcloud.api.js"></script><!-- soundcloud widget api -->
+<script src="{{ assets }}/js/app.min.js"></script>
+</body>
+</html>

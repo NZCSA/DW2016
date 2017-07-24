@@ -1,0 +1,31 @@
+---
+layout              : layout-2.hbs
+titleSuffix         : " - Album Example 1"
+barWithLogo         : true
+backgroundImages    : ["../media/images/albums/02-background.jpg"]
+backgroundOverlay   : true
+---
+{{> background-image }}
+<article id="region-page-one" class="region region-dark-background region-page" data-deliverance-region="page-one">
+    <div id="page-top">
+        {{> share-on }}
+        <div id="featured-image">
+            <img src="../media/images/albums/02-featured.jpg" class="image-preload" alt="" data-deliverance-element="featured">
+        </div>
+        <h1 class="hidden" data-deliverance-element="title">Love Möna<br />The Breaktaking Album</h1>
+    </div>
+    <div id="page-content" class="hidden" data-deliverance-element="content">
+        <!-- content -->
+        <div id="page-content-meta" data-deliverance-element="meta">
+            <p>The Second Acclaimed Album Of Lorem Ipsums</p>
+            <p>Listen it now for free.</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est.</p>
+        <p>Bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque.</p>
+        <!-- page regions -->
+        <div id="page-regions">
+            {{> tracklist }}
+            {{> events }}
+        </div>
+    </div>
+</article>

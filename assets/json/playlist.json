@@ -1,0 +1,51 @@
+{
+    "title" : "DreamWorks 2014 Finals",
+    "author" : "2014 新秀梦工厂决赛歌曲",
+    "cover" : "../media/images/index_playlist.jpg",
+    "tracks" : [{
+        "name"      : "青苹果乐园",
+        "artist"    : "伍子杰 隋竟伟 郭志成",
+        "duration"  : "3:39",
+        "path"      : "../media/music/1.mp3"
+    }, {
+        "name"      : "至少还有你",
+        "artist"    : "蔡圣琳 原靖雯 丁蓓",
+        "duration"  : "4:28",
+        "path"      : "../media/music/2.mp3"
+    }, {
+        "name"      : "Fly me to the moon & 她说",
+        "artist"    : "张玮玥 高梦竹 张鸿钰",
+        "duration"  : "4:43",
+        "path"      : "../media/music/3.mp3"
+    }, {
+        "name"      : "如果还有明天",
+        "artist"    : "於钇权 王之旗 施融融",
+        "duration"  : "5:13",
+        "path"      : "../media/music/4.mp3"
+    }, {
+        "name"      : "Home",
+        "artist"    : "伍子杰",
+        "duration"  : "3:43",
+        "path"      : "../media/music/17.mp3"
+    }, {
+        "name"      : "六月飞霜",
+        "artist"    : "郭志成",
+        "duration"  : "4:13",
+        "path"      : "../media/music/18.mp3"
+    }, {
+        "name"      : "幸福了然后呢",
+        "artist"    : "丁蓓",
+        "duration"  : "5:06",
+        "path"      : "../media/music/19.mp3"
+    }, {
+        "name"      : "我爱你中国",
+        "artist"    : "张鸿钰",
+        "duration"  : "4:04",
+        "path"      : "../media/music/20.mp3"
+    }, {
+        "name"      : "眼泪",
+        "artist"    : "於钇权",
+        "duration"  : "3:46",
+        "path"      : "../media/music/21.mp3"
+    }]
+}
